@@ -1,4 +1,4 @@
-package _01493_LongestSubarray;
+package problems._01493_LongestSubarray;
 
 import static org.junit.Assert.*;
 
@@ -10,7 +10,7 @@ import org.junit.rules.Timeout;
 
 public class SolutionTest {
 
-    /** Test method for {@link _01493_LongestSubarray.Solution } */
+    /** Test method for {@link problems._01493_LongestSubarray.Solution } */
     Solution solution;
 
     @Rule
