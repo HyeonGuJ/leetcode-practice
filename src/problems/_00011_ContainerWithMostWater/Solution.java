@@ -1,6 +1,4 @@
-
 package problems._00011_ContainerWithMostWater;
-
 
 public class Solution {
 
