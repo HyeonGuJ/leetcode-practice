@@ -2,24 +2,42 @@ package problems._00006_ZIGZAG;
 
 public class Solution {
 
-    public int maxArea(int[] height) {
-
-        int max = 0;
-        int start = 0;
-        int last = height.length - 1;
-
-        while (last - start > 0) {
-            int standard = Math.min(height[last], height[start]);
-            int area = (last - start) * standard;
-
-            if (height[last] > height[start]) {
-                start++;
-            } else {
-                last--;
-            }
-
-            max = Math.max(max, area);
+    public String convert(String s, int numRows) {
+        if (numRows == 1) {
+            return s;
         }
-        return max;
+        int stepSize = (2 * numRows - 2);
+        int widthOfStep = numRows - 1;
+        int sizeOfArr = (s.length() / stepSize + 1) * widthOfStep;
+
+        String[][] arr = new String[numRows][sizeOfArr];
+
+        int x = 0;
+        int y = 0;
+        int count = 0;
+        while (count < s.length()) {
+            arr[x][y] = s.charAt(count) + "";
+
+            int indexOfStep = count % stepSize;
+            if (indexOfStep < numRows - 1) {
+                x++;
+            } else {
+                x--;
+                y++;
+            }
+            count++;
+        }
+
+        //Printer.print(arr);
+        //merge
+        String result = "";
+        for (int i = 0; i < numRows; i++) {
+            for (int j = 0; j < sizeOfArr; j++) {
+                if (arr[i][j] != null) {
+                    result = result + arr[i][j];
+                }
+            }
+        }
+        return result;
     }
 }

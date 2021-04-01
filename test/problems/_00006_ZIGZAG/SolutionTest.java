@@ -30,8 +30,26 @@ public class SolutionTest {
     public void Test0() {
         String s = "PAYPALISHIRING";
         int numRow = 3;
-        int actuals = solution.maxArea()
+        String actuals = solution.convert(s, numRow);
+        String expecteds = "PAHNAPLSIIGYIR";
+        assertEquals(expecteds, actuals);
+    }
 
+    @Test
+    public void Test1() {
+        String s = "PAYPALISHIRING";
+        int numRow = 4;
+        String actuals = solution.convert(s, numRow);
+        String expecteds = "PINALSIGYAHRPI";
+        assertEquals(expecteds, actuals);
+    }
+
+    @Test
+    public void Test2() {
+        String s = "A";
+        int numRow = 1;
+        String actuals = solution.convert(s, numRow);
+        String expecteds = "A";
         assertEquals(expecteds, actuals);
     }
 }
