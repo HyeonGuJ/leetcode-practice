@@ -40,4 +40,13 @@ public class Solution {
         }
         return result;
     }
+
+
+    public String convert2(String s, int numRows) {
+        if (numRows == 1) {
+            return s;
+        }
+
+        return null;
+    }
 }
