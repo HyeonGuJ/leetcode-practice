@@ -1,24 +1,26 @@
-package problems._00006_ZIGZAG;
+package problems;
 
 import static org.junit.Assert.assertEquals;
+
 
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.rules.Timeout;
+import problems._00012_IntegertoRoman;
 
-public class SolutionTest {
+public class _00012_IntegertoRoman_Test {
 
 
-    Solution solution;
+    _00012_IntegertoRoman solution;
 
     @Rule
     public Timeout globalTimeout = new Timeout(200);
 
     @Before
     public void setUp() throws Exception {
-        solution = new Solution();
+        solution = new _00012_IntegertoRoman();
     }
 
     @After
@@ -28,28 +30,24 @@ public class SolutionTest {
 
     @Test
     public void Test0() {
-        String s = "PAYPALISHIRING";
-        int numRow = 3;
-        String actuals = solution.convert(s, numRow);
-        String expecteds = "PAHNAPLSIIGYIR";
+        int nums = 1994;
+        String actuals = solution.intToRoman(nums);
+        String expecteds = "MCMXCIV";
         assertEquals(expecteds, actuals);
     }
 
     @Test
     public void Test1() {
-        String s = "PAYPALISHIRING";
-        int numRow = 4;
-        String actuals = solution.convert(s, numRow);
-        String expecteds = "PINALSIGYAHRPI";
+        int nums = 58;
+        String actuals = solution.intToRoman(nums);
+        String expecteds = "LVIII";
         assertEquals(expecteds, actuals);
     }
-
     @Test
     public void Test2() {
-        String s = "A";
-        int numRow = 1;
-        String actuals = solution.convert(s, numRow);
-        String expecteds = "A";
+        int nums = 3;
+        String actuals = solution.intToRoman(nums);
+        String expecteds = "III";
         assertEquals(expecteds, actuals);
     }
 }

@@ -1,24 +1,25 @@
-package problems._01493_LongestSubarray;
+package problems;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
 
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.rules.Timeout;
+import problems._00011_ContainerWithMostWater;
 
-public class SolutionTest {
+public class _00011_ContainerWithMostWater_Test {
 
-    /** Test method for {@link problems._01493_LongestSubarray.Solution } */
-    Solution solution;
+
+    _00011_ContainerWithMostWater solution;
 
     @Rule
     public Timeout globalTimeout = new Timeout(200);
 
     @Before
     public void setUp() throws Exception {
-        solution = new Solution();
+        solution = new _00011_ContainerWithMostWater();
     }
 
     @After
@@ -28,9 +29,9 @@ public class SolutionTest {
 
     @Test
     public void Test0() {
-        int[] nums = {1, 1, 1};
-        int actuals = solution.longestSubarray(nums);
-        int expecteds = 3;
+        int[] nums = {1, 8, 6, 2, 5, 4, 8, 3, 7};
+        int actuals = solution.maxArea(nums);
+        int expecteds = 49;
         assertEquals(expecteds, actuals);
     }
 

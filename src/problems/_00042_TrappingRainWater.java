@@ -1,6 +1,6 @@
-package problems._00042_TrappingRainWater;
+package problems;
 
-public class Solution {
+public class _00042_TrappingRainWater {
 
     public int trap(int[] height) {
         if (height.length < 3) {

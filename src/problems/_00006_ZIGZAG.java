@@ -1,6 +1,6 @@
-package problems._00006_ZIGZAG;
+package problems;
 
-public class Solution {
+public class _00006_ZIGZAG {
 
     public String convert(String s, int numRows) {
         if (numRows == 1) {

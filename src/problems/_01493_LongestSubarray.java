@@ -1,6 +1,6 @@
-package problems._01493_LongestSubarray;
+package problems;
 
-public class Solution {
+public class _01493_LongestSubarray {
 
     public int longestSubarray(int[] nums) {
         if (nums == null || nums.length == 0) {

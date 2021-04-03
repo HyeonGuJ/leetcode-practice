@@ -1,4 +1,4 @@
-package problems._00042_TrappingRainWater;
+package problems;
 
 import static org.junit.Assert.assertEquals;
 
@@ -8,17 +8,17 @@ import org.junit.Rule;
 import org.junit.Test;
 import org.junit.rules.Timeout;
 
-public class SolutionTest {
+public class _00000_Name_Test {
 
 
-    Solution solution;
+    _00000_Name solution;
 
     @Rule
     public Timeout globalTimeout = new Timeout(200);
 
     @Before
     public void setUp() throws Exception {
-        solution = new Solution();
+        solution = new _00000_Name();
     }
 
     @After
@@ -28,18 +28,9 @@ public class SolutionTest {
 
     @Test
     public void Test0() {
-        int[] nums = {0, 1, 0, 2, 1, 0, 1, 3, 2, 1, 2, 1};
-        int actuals = solution.trap(nums);
-        int expecteds = 6;
+        int[] nums = {1, 8, 6, 2, 5, 4, 8, 3, 7};
+        int actuals = solution.problem();
+        int expecteds = 49;
         assertEquals(expecteds, actuals);
     }
-
-    @Test
-    public void Test1() {
-        int[] nums = {4, 2, 0, 3, 2, 5};
-        int actuals = solution.trap(nums);
-        int expecteds = 9;
-        assertEquals(expecteds, actuals);
-    }
-
 }

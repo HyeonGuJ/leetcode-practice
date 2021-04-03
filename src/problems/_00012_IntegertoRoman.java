@@ -1,4 +1,4 @@
-package problems._00012_IntegertoRoman;
+package problems;
 
 /*
 Symbol       Value
@@ -16,7 +16,7 @@ Symbol       Value
 // 4: IV
 // 5: V
 
-public class Solution {
+public class _00012_IntegertoRoman {
 
 
     public String intToRoman(int num) {

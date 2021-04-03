@@ -1,4 +1,4 @@
-package problems._00050_POW;
+package problems;
 
 import static org.junit.Assert.assertEquals;
 
@@ -7,18 +7,19 @@ import org.junit.Before;
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.rules.Timeout;
+import problems._00050_POW;
 
-public class SolutionTest {
+public class _00050_POW_Test {
 
 
-    problems._00050_POW.Solution solution;
+    _00050_POW solution;
 
     @Rule
     public Timeout globalTimeout = new Timeout(200);
 
     @Before
     public void setUp() throws Exception {
-        solution = new Solution();
+        solution = new _00050_POW();
     }
 
     @After

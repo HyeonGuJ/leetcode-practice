@@ -1,6 +1,6 @@
-package com._00000_Name;
+package problems;
 
-public class Solution {
+public class _00000_Name {
 
     public int problem() {
         return 0;

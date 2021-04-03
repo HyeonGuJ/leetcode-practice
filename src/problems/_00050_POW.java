@@ -1,6 +1,6 @@
-package problems._00050_POW;
+package problems;
 
-public class Solution {
+public class _00050_POW {
 
     public double myPow(double x, int n) {
 
