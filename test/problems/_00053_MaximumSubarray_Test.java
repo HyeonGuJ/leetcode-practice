@@ -8,17 +8,17 @@ import org.junit.Rule;
 import org.junit.Test;
 import org.junit.rules.Timeout;
 
-public class _00012_IntegertoRoman_Test {
+public class _00053_MaximumSubarray_Test {
 
 
-    _00012_IntegertoRoman solution;
+    _00053_MaximumSubarray solution;
 
     @Rule
     public Timeout globalTimeout = new Timeout(200);
 
     @Before
     public void setUp() throws Exception {
-        solution = new _00012_IntegertoRoman();
+        solution = new _00053_MaximumSubarray();
     }
 
     @After
@@ -28,24 +28,18 @@ public class _00012_IntegertoRoman_Test {
 
     @Test
     public void Test0() {
-        int nums = 1994;
-        String actuals = solution.intToRoman(nums);
-        String expecteds = "MCMXCIV";
+        int[] nums = {-2, 1, -3, 4, -1, 2, 1, -5, 4};
+        int actuals = solution.maxSubArray(nums);
+        int expecteds = 6;
         assertEquals(expecteds, actuals);
     }
 
     @Test
     public void Test1() {
-        int nums = 58;
-        String actuals = solution.intToRoman(nums);
-        String expecteds = "LVIII";
+        int[] nums = {5, 4, -1, 7, 8};
+        int actuals = solution.maxSubArray(nums);
+        int expecteds = 23;
         assertEquals(expecteds, actuals);
     }
-    @Test
-    public void Test2() {
-        int nums = 3;
-        String actuals = solution.intToRoman(nums);
-        String expecteds = "III";
-        assertEquals(expecteds, actuals);
-    }
+
 }
