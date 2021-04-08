@@ -71,7 +71,7 @@
 	<!-- ================================= 
           target: crawl 
     ================================= -->
-	<target name="crawl" depends="crawl.compile" description="Crawl new problems from leetcode">
+	<target name="crawl" depends="crawl.compile" description="Crawl new leetcode.problems from leetcode">
 		<java classname="${main-class}" fork="true">
 			<classpath>
 				<path refid="classpath" />
