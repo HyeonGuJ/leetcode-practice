@@ -9,7 +9,7 @@ import org.junit.Test;
 import org.junit.rules.Timeout;
 import programmers.problems._42583_TruckOnBridge;
 
-public class _42583_TruckOnBridge_Test {
+public class _12583_TruckOnBridge_Test {
 
 
     _42583_TruckOnBridge solution;
