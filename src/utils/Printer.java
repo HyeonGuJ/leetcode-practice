@@ -14,6 +14,13 @@ public class Printer {
 
     }
 
+    public static void print(int[][] nums) {
+        for (int i = 0; i < nums.length; i++) {
+            print(nums[i]);
+        }
+        System.out.println();
+    }
+
     public static void print(String[] arr) {
         if (arr == null) {
             System.out.println("void array");
@@ -30,5 +37,6 @@ public class Printer {
         for (int i = 0; i < arr.length; i++) {
             print(arr[i]);
         }
+        System.out.println();
     }
 }
