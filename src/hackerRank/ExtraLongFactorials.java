@@ -1,4 +1,4 @@
-package programmers.hackerRank;
+package hackerRank;
 
 import java.math.BigDecimal;
 

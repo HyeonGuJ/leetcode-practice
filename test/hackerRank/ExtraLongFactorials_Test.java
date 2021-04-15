@@ -6,7 +6,6 @@ import java.math.BigDecimal;
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.rules.Timeout;
-import programmers.hackerRank.ExtraLongFactorials;
 
 public class ExtraLongFactorials_Test {
 

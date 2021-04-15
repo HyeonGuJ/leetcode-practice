@@ -5,7 +5,6 @@ import static org.junit.Assert.assertEquals;
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.rules.Timeout;
-import programmers.hackerRank._3DSurfaceArea;
 
 public class _3DSurfaceArea_Test {
 
