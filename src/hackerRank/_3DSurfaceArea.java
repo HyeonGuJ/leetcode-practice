@@ -1,4 +1,4 @@
-package programmers.hackerRank;
+package hackerRank;
 
 public class _3DSurfaceArea {
 
