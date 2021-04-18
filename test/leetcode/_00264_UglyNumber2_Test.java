@@ -35,4 +35,7 @@ public class _00264_UglyNumber2_Test {
         assertEquals(expecteds, actuals);
     }
 
+
+
+
 }
