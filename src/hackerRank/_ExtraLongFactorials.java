@@ -2,7 +2,7 @@ package hackerRank;
 
 import java.math.BigDecimal;
 
-public class ExtraLongFactorials {
+public class _ExtraLongFactorials {
 
     // Complete the extraLongFactorials function below.
     public static BigDecimal extraLongFactorials(int n) {
