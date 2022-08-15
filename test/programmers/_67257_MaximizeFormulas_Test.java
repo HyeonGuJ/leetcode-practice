@@ -7,7 +7,7 @@ import programmers.problems._67257_MaximizeFormulas;
 
 import static org.junit.Assert.assertEquals;
 
-public class __67257_MaximizeFormulas_Test {
+public class _67257_MaximizeFormulas_Test {
 
 
     _67257_MaximizeFormulas solution;
