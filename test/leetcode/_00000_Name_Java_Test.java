@@ -2,24 +2,24 @@ package leetcode;
 
 import static org.junit.Assert.assertEquals;
 
-import leetcode.problems._00000_Name;
+import leetcode.problems._00000_Name_Java;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.rules.Timeout;
 
-public class _00000_Name_Test {
+public class _00000_Name_Java_Test {
 
 
-    _00000_Name solution;
+    _00000_Name_Java solution;
 
     @Rule
     public Timeout globalTimeout = new Timeout(200);
 
     @Before
     public void setUp() throws Exception {
-        solution = new _00000_Name();
+        solution = new _00000_Name_Java();
     }
 
     @After
