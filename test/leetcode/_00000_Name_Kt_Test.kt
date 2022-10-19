@@ -7,8 +7,10 @@ import org.junit.rules.Timeout
 class _00000_Name_Kt_Test {
     var solution: _00000_Name_Kt? = null
 
+    @JvmField
     @Rule
-    var globalTimeout = Timeout(200)
+    val globalTimeout = Timeout(200)
+
     @Before
     @Throws(Exception::class)
     fun setUp() {
