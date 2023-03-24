@@ -5,7 +5,6 @@ public class _62048_PlainSquare {
 
     public long solution(long w, long h) {
         return w * h - (w + h - getGCD(w, h));
-        //return w * h - (w + h - BigInteger.valueOf(w).gcd(BigInteger.valueOf(h)).longValue());
     }
 
     private long getGCD(long w, long h) {

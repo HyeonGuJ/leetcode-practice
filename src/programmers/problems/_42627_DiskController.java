@@ -2,7 +2,7 @@ package programmers.problems;
 
 import java.util.*;
 
-public class __42627_DiskController {
+public class _42627_DiskController {
 
     public int solution(int[][] jobs) {
         int total = 0;
